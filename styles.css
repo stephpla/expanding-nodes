@@ -1,11 +1,54 @@
-h1 {
-  /* styles to make the text big, different font, centred and with a large amount of padding */
+body {
+  margin: 0;
 }
+
+
 
 .page-content {
   /* styles to make it 100% width and a color, change to a picture once everything is a little more fleshed out */
+  background-color: tomato;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  padding-bottom: 20px;
+
 }
 
-span {
-  /* styles to make them inside  rectagles with rounded corners, the rectangles a color and */
+h1 {
+  /* styles to make the text big, different font, centred and with a large amount of padding */
+  text-align: center;
+
+  font-size: 5em;
+  margin: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+
+.node {
+  /* styles to make them inside  rectagles with rounded corners, give the rectangles a color and make the font white or something */
+  /* padding: 50px; */
+  background-color: black;
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.first {
+  float: left;
+}
+
+.third {
+  float: left;
+}
+
+.second {
+  float: left;
+}
+
+.group:after {
+  content:"";
+  display: table;
+  clear: both;
 }
