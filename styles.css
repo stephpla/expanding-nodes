@@ -1,52 +1,79 @@
+/* General styles ------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-}
-
-
-
-.page-content {
-  /* styles to make it 100% width and a color, change to a picture once everything is a little more fleshed out */
-  background-color: tomato;
+  /* background-color: #f2f2f2; */
+  background-color: #f2f2f2;
   font-family: Helvetica, sans-serif;
   color: white;
-  padding-bottom: 20px;
 
 }
+
 
 h1 {
-  /* styles to make the text big, different font, centred and with a large amount of padding */
   text-align: center;
-
   font-size: 5em;
   margin: 0;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  color: black;
+  text-shadow: 1px 1px 2px black;
+  /* border: 1px solid #1a66ff; */
 }
-
-
 
 .node {
-  /* styles to make them inside  rectagles with rounded corners, give the rectangles a color and make the font white or something */
-  /* padding: 50px; */
-  background-color: black;
-  width: 15%;
+  background-color: #3377ff;
+  color: white;
+  width: 120px;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin-right: 80px;
+  /* border: 3px solid red; */
+  border-radius: 10px;
+
+
+}
+/* Layout styles ------------------ */
+.nodes-area {
+  width: 75%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 25%;
+  margin-right: auto;
+  /* border: 3px solid red; */
+
+
 }
 
-.first {
+/* Floated Columns ------------------ */
+
+ .first {
+  float: left;
+}
+
+
+ .second {
   float: left;
 }
 
 .third {
-  float: left;
+ float: left;
 }
 
-.second {
-  float: left;
+.fourth {
+ float: left;
 }
 
+
+
+
+
+
+/* Float clearfix ------------------ */
 .group:after {
   content:"";
   display: table;
