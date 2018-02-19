@@ -1,11 +1,87 @@
+/* General styles ------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: #f2f2f2; */
+  background-color: #f2f2f2;
+  font-family: Helvetica, sans-serif;
+  color: white;
+
+}
+
+
 h1 {
-  /* styles to make the text big, different font, centred and with a large amount of padding */
+  text-align: center;
+  font-size: 5em;
+  margin: 0;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  color: black;
+  text-shadow: 1px 1px 2px black;
+  /* border: 1px solid #1a66ff; */
 }
 
-.page-content {
-  /* styles to make it 100% width and a color, change to a picture once everything is a little more fleshed out */
+.node {
+  background-color: #3377ff;
+  color: white;
+  width: 120px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 80px;
+  /* border: 3px solid red; */
+  border-radius: 10px;
+
+
+}
+/* Layout styles ------------------ */
+.nodes-area {
+  width: 75%;
+  padding-left: 0px;
+  /* padding-right: 100px; */
+  margin-left: 20%;
+  margin-right: auto;
+  /* border: 3px solid red; */
+
+
 }
 
-span {
-  /* styles to make them inside  rectagles with rounded corners, the rectangles a color and */
+/* Psuedo Classes ------------------ */
+.node:hover {
+  text-align: left;
+  padding-right: 180px;
+}
+
+/* Floated Nodes ------------------ */
+
+ .first {
+  float: left;
+}
+
+
+ .second {
+  float: left;
+}
+
+.third {
+ float: left;
+}
+
+.fourth {
+ float: left;
+}
+
+
+
+
+
+
+/* Float clearfix ------------------ */
+.group:after {
+  content:"";
+  display: table;
+  clear: both;
 }
